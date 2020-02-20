@@ -46,7 +46,7 @@ a {
 .menu-footer li a {
     display: block;
     padding: 15px;
-    font-size: 25px;
+    font-size: 1em;
     color: var(--highlight);
 }
 
@@ -95,7 +95,7 @@ body {
 .infos>img {
     width: var(--dimensoesFotoPerfil);
     height: var(--dimensoesFotoPerfil);
-    border-radius: 10%;
+    border-radius: 25%;
 }
 
 .infos>p {

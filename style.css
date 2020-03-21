@@ -3,6 +3,7 @@
     --backgroundBody: #fff;
     --backgroundFooter: #d4e9fc;
     --branco: #fff;
+    --preto: #012;
     --highlight: #247fd1;
     --dimensoesFotoPerfil: 250px;
 }
@@ -18,7 +19,7 @@ body, ul, li, p {
 
 a {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .header {

@@ -1,0 +1,324 @@
+/* Estilo do corpo */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: url(../img/bg-gradient.jpg) no-repeat center center;
+  background-size: cover;
+  color: #F7F7F6;
+  padding-top: 3rem;
+  cursor: default;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+
+/* Efeito granulado animado do fundo */
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('../img/noise.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+
+/* Estilo dos links */
+
+a {
+  color: #00adee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 .5rem 1rem rgba(0,0,0,.5)!important;
+}
+
+.btn-ver-mais {
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.btn-ver-mais:hover {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #00adee;
+  transform: translate(0, -5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+
+/* Barra de menus */
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* backdrop-filter: blur(5px); */
+  background: linear-gradient(
+    to bottom,
+    hsl(204deg, 100%, 8%) 0%,
+    hsla(204deg, 100%, 8%, 0.987) 8.1%,
+    hsla(204deg, 100%, 8%, 0.951) 15.5%,
+    hsla(204deg, 100%, 8%, 0.896) 22.5%,
+    hsla(204deg, 100%, 8%, 0.825) 29%,
+    hsla(204deg, 100%, 8%, 0.741) 35.3%,
+    hsla(204deg, 100%, 8%, 0.648) 41.2%,
+    hsla(204deg, 100%, 8%, 0.55) 47.1%,
+    hsla(204deg, 100%, 8%, 0.45) 52.9%,
+    hsla(204deg, 100%, 8%, 0.352) 58.8%,
+    hsla(204deg, 100%, 8%, 0.259) 64.7%,
+    hsla(204deg, 100%, 8%, 0.175) 71%,
+    hsla(204deg, 100%, 8%, 0.104) 77.5%,
+    hsla(204deg, 100%, 8%, 0.049) 84.5%,
+    hsla(204deg, 100%, 8%, 0.013) 91.9%,
+    hsla(204deg, 100%, 8%, 0) 100%
+  );
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:last-child {
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    margin: 0 0 0 1.5rem;
+}
+
+.offcanvas.show {
+    transform: none;
+    background: #000a5b42 !important;
+    backdrop-filter: blur(5px);
+}
+
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+/* Cabeçalhos */
+
+header#topo {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header#topo-post, header#topo-comum {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+/* Espaçamento das seções */
+
+.margin-section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+
+/* Estilo dos cards */
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0;
+}
+
+a .card-title {
+    color: #fff;
+}
+
+a .card-body:hover .card-title {
+    color: #fff;
+    opacity: .7;
+}
+
+.card {
+  transition: all .3s ease-out;
+}
+
+.card:hover {
+  transform: translate(0, -5px);
+}
+
+
+
+/* Posts */
+
+.alinhamento-post-blog {
+  margin: 0 10px;
+}
+
+.alinhamento-post-blog h2, .titulo-card-blog {
+  color: #005590;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 0 0 rgb(255, 255, 255), -10px 0 0 rgb(255, 255, 255);
+  display: inline;
+  z-index: 999;
+  text-shadow: none;
+}
+
+.posicao-titulo {
+  bottom: 30px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+@media (min-width: 737px) {
+  .alinhamento-post-blog {
+    margin-left: -100px;
+  }
+
+  .alinhamento-post-blog h2 {
+    color: #005590;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 0 0 rgb(255, 255, 255), -10px 0 0 rgb(255 255 255);
+    line-height: 2.59rem;
+    display: inline;
+    z-index: 999;
+  }
+}
+
+
+
+#blog article p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+
+/* Paginação */
+
+.page-link {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 0 !important;
+    font-size: 1.5rem;
+}
+
+.page-item.disabled .page-link {
+    color: rgb(255 255 255 / 50%);
+    pointer-events: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+/* Rodapé */
+
+footer#rodape a {
+  color: #fff;
+}
+
+footer#rodape a:hover {
+  color: #fff;
+  opacity: .75;
+}
+
+
+/* Animação dos títulos */
+
+.reveal-text {
+  visibility: hidden;
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+
+/* Cursor customizado */
+
+@media (min-width: 737px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+  }
+
+  input, textarea, label, button, .btn {
+        cursor: none !important;
+    }
+
+  body {
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00adee;
+    mix-blend-mode: hard-light;
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(0.25);
+    z-index: 99999;
+  }
+
+  .custom-cursor--link {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+}

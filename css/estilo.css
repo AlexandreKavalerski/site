@@ -322,3 +322,21 @@ footer#rodape a:hover {
   }
 
 }
+
+/* perfil */
+.experiencia-carreira {
+  margin-bottom: 1rem;
+}
+.experiencia-carreira a {
+  color: #F7F7F6;
+  text-decoration: underline;
+}
+
+.experiencia-carreira span {
+  color: #acafbc;
+  text-decoration-style: double;
+}
+
+.experiencia-carreira p{
+  margin-bottom: 0;
+}
